@@ -117,7 +117,7 @@ struct TaskSE3EqualityPythonVisitor
                                   self.getConstraint().vector());
     return cons;
   }
-  static void setReference(TaskSE3& self, trajectories::TrajectorySample& ref) {
+  static void setReference(TaskSE3& self, pinocchio::SE3& ref) {
     self.setReference(ref);
   }
   static const Eigen::VectorXd& getDesiredAcceleration(const TaskSE3& self) {
